@@ -1,5 +1,7 @@
 class ship {
-
+    constructor(hp) {
+        this.hp = hp;
+    }
 }
 
-module.exports = {ship}
+module.exports = ship;
