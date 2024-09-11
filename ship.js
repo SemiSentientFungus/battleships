@@ -1,9 +1,17 @@
 class ship {
-    constructor(hp) {
-        this.hp = hp;
+    constructor(length) {
+        this.length = length;
+        this.hits = 0;
+        this.sunk = false;
     }
     hit() {
-        this.hp -= 1;
+        this.hits++;
+        this.isSunk()
+    }
+    isSunk() {
+        if (this.length == this.hits){
+            this.sunk = true;
+        }
     }
 }
 
