@@ -6,4 +6,8 @@ describe('Ship object testing', () => {
     test('Ship hp is properly set', () => {
         expect(boat.hp).toBe(10);
     })
+    test('Ship hp decreases on hit', () => {
+        boat.hit();
+        expect(boat.hp).toBe(9);
+    })
 })
